@@ -3,6 +3,7 @@ Proof of concept of how the creation of Discord accounts can be automated withou
 
 About
 A script that automates creating discord accounts. It shows how accounts can be created automatically without the user typing unless there is a captcha (h-Captcha just needs to be clicked) . It automatically verifies your Discord account via email for you and automatically saves login info in login.txt in email:password:token format. This is used for educational purposes only.
+__________________________________________________________________________
 
 Features
 Auto scrape email
@@ -15,6 +16,8 @@ Proxy support
 Multi-threading
 Preview
 Picture
+
+__________________________________________________________________________
 
 Usage
 You can customize usernames by editing the usernames in discord_usernames.txt.
@@ -33,6 +36,7 @@ pip install requests
 To run the script..
 python discordgenerator.py
 Proxy support
+__________________________________________________________________________
 
 If you want to use proxies, simply paste the proxies in config/proxies.txt. If you want to stop using proxies, just remove all the proxies from the .txt file. The script automatically checks for proxies on startup. HTTP proxies are only supported as of now. If the proxies are not alive, the script will throw a WebDriver error.
 Threading mode
